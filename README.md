@@ -26,7 +26,9 @@ Discord社群: https://discord.gg/kXwBA4tFKb <br>
 ![全域設定](https://github.com/Forever-Hate/McHateBot_UI/blob/main/docs/images/global_setting.png)
 
 # 下載
-目前處於alpha版的開發階段，如要使用請到 `assets/installer/output` [這裡](https://github.com/Forever-Hate/McHateBot_UI/tree/main/assets/installer/output) 下載並安裝 `installer-windows.exe`
+
+## Windows
+目前處於alpha版的開發階段，如要使用請到 `assets/installer/output` [這裡](./assets/installer/output) 下載並安裝 `installer-windows.exe` 或是 `installer-macos.dmg`
 
 # 免責聲明
 本程式並無儲存任何個人資料與帳號，也沒有任何的後門，敬請安心使用<br>
