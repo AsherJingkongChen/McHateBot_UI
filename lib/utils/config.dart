@@ -3,7 +3,7 @@ const String API_ENDPOINT = "https://api.github.com/";
 ///github url
 const String ENDPOINT = "https://github.com/";
 ///github repo 擁有者名稱
-const String OWNER = "Forever-Hate";
+const String OWNER = "AsherJingkongChen";
 ///github repo 名稱
 const String repoName = "McHateBot_UI";
 ///是否在開發階段

@@ -216,6 +216,7 @@ class _ConfigEditScreenState extends State<ConfigEditScreen> {
             builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
               if(snapshot.connectionState == ConnectionState.done)
               {
+                logger.i(snapshot);
                 config ??= snapshot.data![0];
                 config!.ip = (snapshot.data![1] as Map<String,int>).entries.reduce((a, b) => a.value < b.value ? a : b).key;
                 _textEditingController.text = config!.username;

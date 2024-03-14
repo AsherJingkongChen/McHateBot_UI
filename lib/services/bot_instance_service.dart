@@ -55,9 +55,13 @@ class BotInstanceService{
     ConfigService.modifyEnv(env, 'WEBSOCKET_PORT', websocketPort);
     await ConfigService.saveEnv(env, instance.uuid);
     final baseDir = await getApplicationCacheDirectory();
-    logger.d("開始執行${join(baseDir.path,"instance",instance.uuid,"${instance.type.value.toLowerCase()}.exe")}");
+    final executablePath = join(baseDir.path,"instance",instance.uuid,"${instance.type.value.toLowerCase()}.exe");
+    logger.d("開始執行$executablePath");
     
-    final process = await Process.start(join(baseDir.path,"instance",instance.uuid,"${instance.type.value.toLowerCase()}.exe"), [], workingDirectory: join(baseDir.path,"instance",instance.uuid));
+    if (Platform.isLinux || Platform.isMacOS) {
+      await Process.start("chmod", ["+x", executablePath]);
+    }
+    final process = await Process.start(executablePath, [], workingDirectory: join(baseDir.path,"instance",instance.uuid));
     
     instance.isProcess = true;
     instance.process = process;
