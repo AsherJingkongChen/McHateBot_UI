@@ -27,7 +27,6 @@ Discord社群: https://discord.gg/kXwBA4tFKb <br>
 
 # 下載
 
-## Windows
 目前處於alpha版的開發階段，如要使用請到 `assets/installer/output` [這裡](./assets/installer/output) 下載並安裝 `installer-windows.exe` 或是 `installer-macos.dmg`
 
 # 免責聲明
